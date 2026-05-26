@@ -1,0 +1,164 @@
+{
+  "reviews": [
+    {
+      "reviewer_name": "nagato Leong",
+      "rating": 5,
+      "review_text": "Dr. Shubham stands out as the finest psychologist in Delhi. They offer a benchmark of excellent care, and I recommend their services above all others for psychological well-being.",
+      "aspects_mentioned": ["psychological well-being", "patient care"],
+      "owner_response": "Thank you"
+    },
+    {
+      "reviewer_name": "Chogyal Kaito Nanex",
+      "rating": 5,
+      "review_text": "Dr. Shubham is a highly regarded psychologist in Delhi. I would strongly recommend their services for anyone seeking psychological help. This is one of the best✨ 💖 🌟",
+      "aspects_mentioned": [
+        "psychological intervention",
+        "clinical consultation"
+      ],
+      "owner_response": "Thank you dear"
+    },
+    {
+      "reviewer_name": "Deepak kumar",
+      "rating": 5,
+      "review_text": "Thank you sir. For treating my depression. I had lost hope in my life. But you gave me ray of hope and filled my life with light and dreams. Words can't express my gratitude. Once again thank you sir",
+      "aspects_mentioned": [
+        "clinical depression",
+        "remission",
+        "affective support"
+      ],
+      "owner_response": null
+    },
+    {
+      "reviewer_name": "Pankaj Boken",
+      "rating": 5,
+      "review_text": "Glad that I got therapist like Dr. Shubham. His therapies helped me overcome my anxiety and taught me healthy coping mechanisms which help me in living a better life.",
+      "aspects_mentioned": [
+        "anxiety disorder",
+        "coping mechanisms",
+        "psychotherapy"
+      ],
+      "owner_response": null
+    },
+    {
+      "reviewer_name": "Dhanoop MD",
+      "rating": 5,
+      "review_text": "Great place! The doctor is friendly and made me relax throughout the appointment! I came to know about this place through a friend. Doctor had a very polite and friendly behavior along with a neat and sanitized environment. Would definitely recommend to those who are having first psychologist appointment.",
+      "aspects_mentioned": [
+        "therapeutic alliance",
+        "stress reduction",
+        "initial assessment"
+      ],
+      "owner_response": "Thank you for your honest review dear"
+    },
+    {
+      "reviewer_name": "Raghav Kapoor",
+      "rating": 5,
+      "review_text": "Really good experience. I have visited him regarding my anxiety issues.",
+      "aspects_mentioned": ["anxiety symptoms", "clinical treatment"],
+      "owner_response": null
+    },
+    {
+      "reviewer_name": "Abhishek sharma",
+      "rating": 5,
+      "review_text": "I personally don't prefer to go to psychologists for my problems as when I was in college I had a really bad experience with psychologists (my parents took me to AIIMS previously once for treatment) I hated the rudeness of the doctors that ...",
+      "aspects_mentioned": ["treatment resistance", "patient-provider dynamic"],
+      "owner_response": null
+    },
+    {
+      "reviewer_name": "Ram Vantepaka",
+      "rating": 5,
+      "review_text": "Dr. Shubham Singhal is an outstanding psychologist who truly listens with empathy and offers practical, evidence-based guidance. His compassionate approach, deep understanding of mental health, and clear communication made a significant ...",
+      "aspects_mentioned": [
+        "clinical empathy",
+        "evidence-based practice",
+        "psychoeducation"
+      ],
+      "owner_response": "Thank you \ud83d\ude04"
+    },
+    {
+      "reviewer_name": "OMKAR JADHAV",
+      "rating": 5,
+      "review_text": "Really a good psychologist and a friend. He really knows how to make someone open up and very much understanding. Also number of different therapies for same solution so very comfortable to get along with each session \ud83e\udd17",
+      "aspects_mentioned": [
+        "catharsis",
+        "eclectic therapy",
+        "rapport building"
+      ],
+      "owner_response": "Thank you dear \ud83e\udd17 I m glad that I could help"
+    },
+    {
+      "reviewer_name": "NIKHIL PAUL",
+      "rating": 5,
+      "review_text": "Very good psychologist and a very good teacher as well He has been a mentor since my college days Helped me a lot and truly he is fantastic \u2728",
+      "aspects_mentioned": ["developmental mentoring", "cognitive development"],
+      "owner_response": null
+    },
+    {
+      "reviewer_name": "Prince Raj",
+      "rating": 5,
+      "review_text": "As per my experience I can say that he is the best, he helped many his sessions. He uses his experiences in his treatment and understands the condition of patient very well.",
+      "aspects_mentioned": ["clinical formulation", "therapeutic progress"],
+      "owner_response": "Thanks for your review dear. I'll do my best \ud83c\udf38"
+    },
+    {
+      "reviewer_name": "Kanishk Singh",
+      "rating": 5,
+      "review_text": "Awesome doctor Guides me well enough that i will solve my problems with the best way to get the normal life back . ...",
+      "aspects_mentioned": [
+        "cognitive restructuring",
+        "behavioral modification"
+      ],
+      "owner_response": null
+    },
+    {
+      "reviewer_name": "Ankita Agrawal",
+      "rating": 5,
+      "review_text": "I joined the sessions with a burden and lot of pressure in my mind and heaviness in my heart but as I discussed everything with the counsellor and now I have a different view towards life and smiling woth my heart \ud83d\ude01 \ud83d\ude01",
+      "aspects_mentioned": [
+        "psychological distress",
+        "cognitive reframing",
+        "emotional regulation"
+      ],
+      "owner_response": "Thank you, happy to help \ud83d\udc90"
+    },
+    {
+      "reviewer_name": "Kushagra Madhukar",
+      "rating": 5,
+      "review_text": "I had depression due to past personal experiences but dr. Shubham helped me a lot in recovery. Thanks mr. Shubham for therapy.",
+      "aspects_mentioned": [
+        "situational depression",
+        "psychological rehabilitation",
+        "psychotherapy"
+      ],
+      "owner_response": null
+    },
+    {
+      "reviewer_name": "Deepak Shokeen",
+      "rating": 5,
+      "review_text": "A good listener, attentive and keen counselor. help developing insight so that one can deal better with things.",
+      "aspects_mentioned": [
+        "active listening",
+        "clinical insight",
+        "problem-solving appraisal"
+      ],
+      "owner_response": "Thanks for your honest review dear. I'll Always try to help others"
+    },
+    {
+      "reviewer_name": "Krishnandu Jana",
+      "rating": 5,
+      "review_text": "Friendly nature, warm attitude with a good knowledge of psychology. Enjoy his job. Keep it up.",
+      "aspects_mentioned": [
+        "unconditional positive regard",
+        "psychological expertise"
+      ],
+      "owner_response": "Thank you for your review dear. My pleasure to help"
+    },
+    {
+      "reviewer_name": "Vinay",
+      "rating": 5,
+      "review_text": "Very good therapist and good environment",
+      "aspects_mentioned": ["milieu therapy", "therapeutic environment"],
+      "owner_response": null
+    }
+  ]
+}

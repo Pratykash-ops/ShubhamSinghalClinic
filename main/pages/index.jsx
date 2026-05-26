@@ -5,7 +5,13 @@ import MyApproach from "@/components/HomePage/MyApproch";
 import ServicesSection from "@/components/HomePage/ServicesSection";
 import TestimonialsSection from "@/components/HomePage/Testimonial";
 import HowCanIhelp from "@/components/HomePage/HowCanIhelp";
+import MythReality from "@/components/HomePage/MythReality";
+import TrainedFrom from "@/components/HomePage/TrainedFrom";
+import { useLanguage } from "@/contexts/LanguageContext";
+
 export default function Home() {
+  const { t } = useLanguage();
+
   return (
     <div>
       <Hero />
@@ -18,16 +24,16 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-zinc-900 e">
-              Meet Dr. Shubham Singhal
+              {t("aboutTitle")}
             </h2>
             <p className="text-zinc-700  text-lg leading-relaxed mb-4">
-              Dr. Shubham Singhal is a licensed psychologist with a vision — to bridge the gap between scientific
-              understanding and everyday emotional challenges. With a unique blend of evidence-based methods and
-              heartfelt connection, he's guided hundreds toward clarity, healing, and growth.
+              {t("aboutP1")}
             </p>
-            <p className="text-zinc-700 text-md">
-              Whether you're navigating anxiety, burnout, grief, or just seeking meaning — Dr. Singhal's approach is
-              both grounded and human. No jargon, no fluff. Just truth, trust, and transformation.
+            <p className="text-zinc-700 text-md mb-4">
+              {t("aboutP2")}
+            </p>
+            <p className="text-zinc-700 text-md font-medium text-blue-900 bg-blue-50 p-4 rounded-lg border border-blue-100 shadow-sm">
+              {t("aboutP3")}
             </p>
           </motion.div>
 
@@ -48,7 +54,9 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+      <TrainedFrom />
       <MyApproach />
+      <MythReality />
       <HowCanIhelp/>
       <ServicesSection/>
       <TestimonialsSection/>

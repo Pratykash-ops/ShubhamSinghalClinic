@@ -2,25 +2,30 @@
 import React from 'react'
 import { icons as LucideIcons } from 'lucide-react'
 import Marquee from 'react-fast-marquee'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 const issues = [
   { label: 'anxiety', icon: 'Activity' },
   { label: 'depression', icon: 'CloudDrizzle' },
   { label: 'social anxiety', icon: 'Users' },
   { label: 'ocd', icon: 'RefreshCcw' },
+  { label: 'child behavioral problems', icon: 'Baby' },
   { label: 'intrusive thoughts', icon: 'Zap' },
   { label: 'procrastination', icon: 'Clock' },
+  { label: 'Sleep problems', icon: 'Moon' },
   { label: 'gaslighting', icon: 'AlertCircle' },
   { label: 'burnout', icon: 'Flame' },
+  { label: 'Stress and Anger Management', icon: 'ZapOff' },
   { label: 'stress', icon: 'Loader' },
   { label: 'irrational fear', icon: 'Ghost' },
+  { label: 'Fear and Panic Related Issues', icon: 'AlertTriangle' },
   { label: 'cognitive distortion', icon: 'Brain' },
   { label: 'narcissism', icon: 'Smile' },
+  { label: 'Grief and Trauma', icon: 'CloudOff' },
   { label: 'relationship issues', icon: 'HeartCrack' },
   { label: 'addiction', icon: 'Beer' },
   { label: 'eating disorders', icon: 'Utensils' },
   { label: 'body image issues', icon: 'Eye' },
-  { label: 'anger management', icon: 'ZapOff' },
 ]
 
 const gradients = [
@@ -33,6 +38,8 @@ const gradients = [
 ]
 
 const PsychologicalIssuesMarquee = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="py-8">
       {[0, 1].map((row) => (
@@ -57,7 +64,7 @@ const PsychologicalIssuesMarquee = () => {
                 >
                   {Icon ? <Icon size={16} /> : null}
                 </div>
-                <span>{issue.label}</span>
+                <span>{t(issue.label) || issue.label}</span>
               </div>
             )
           })}

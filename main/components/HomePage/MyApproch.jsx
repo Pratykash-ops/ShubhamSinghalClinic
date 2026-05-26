@@ -1,15 +1,19 @@
 import { motion } from "framer-motion";
 import { CheckCircle, Heart } from "lucide-react";
 import Image from 'next/legacy/image';
-import Link from 'next/link'
-const approachPoints = [
-  "Client-centered and empathetic sessions",
-  "Evidence-based therapeutic methods",
-  "Focus on long-term emotional resilience",
-  "Safe, non-judgmental space for self-exploration",
-];
+import Link from 'next/link';
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function MyApproach() {
+  const { t } = useLanguage();
+
+  const approachPoints = [
+    t("approachPoint1"),
+    t("approachPoint2"),
+    t("approachPoint3"),
+    t("approachPoint4"),
+  ];
+
   return (
     <>
       <section className="w-full py-20 px-12 md:px-10">
@@ -20,7 +24,7 @@ export default function MyApproach() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            My Approach
+            {t("approachTitle")}
           </motion.h2>
           <motion.p
             className="text-gray-700 text-lg mb-10"
@@ -28,7 +32,7 @@ export default function MyApproach() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Every individual carries a story. My goal is to listen deeply, understand with clarity, and walk alongside you as we navigate the healing journey.
+            {t("approachSubtitle")}
           </motion.p>
           <ul className="space-y-6">
             {approachPoints.map((point, index) => (
@@ -58,21 +62,20 @@ export default function MyApproach() {
             </div>
              <div className="w-full md:w-1/2 flex items-center justify-center bg-gray-100 px-8 py-12 text-center md:text-left">
         <div className="max-w-md space-y-6">
-          <h3 className="text-4xl md:text-5xl  leading-snug">
-            your healing <br />
-            <b>is our responsibility</b>
+          <h3 className="text-4xl md:text-5xl leading-snug font-medium">
+            <span dangerouslySetInnerHTML={{ __html: t("approachHeading").replace('our responsibility', '<b>our responsibility</b>') }} />
           </h3>
 
           <ul className="space-y-4 text-gray-600 text-sm md:text-base">
             {[
-              ['trusted', 'therapist at your service'],
-              ['safe', 'space for you'],
-              ['affordable', 'pricing plans'],
-              ['flexible', 'chat, call, video sessions'],
+              [t("featTrusted"), t("featTrustedDesc")],
+              [t("featSafe"), t("featSafeDesc")],
+              [t("featAffordable"), t("featAffordableDesc")],
+              [t("featFlexible"), t("featFlexibleDesc")],
             ].map(([strong, text], i) => (
               <li key={i} className="flex items-start gap-2">
-                <Heart size={18} className="mt-0.5 text-black" />
-                <span>
+                <Heart size={18} className="mt-0.5 text-black shrink-0" />
+                <span className="text-left">
                   <strong className="text-black">{strong}</strong> {text}
                 </span>
               </li>
@@ -80,7 +83,7 @@ export default function MyApproach() {
           </ul>
 
           <Link href='#services'><button className="inline-flex items-center gap-2 bg-white text-black border border-gray-300 px-6 py-3 rounded-full font-medium hover:shadow-lg transition">
-            Explore Our Services
+            {t("exploreServices")}
             <span className="rotate-45">↗</span>
           </button></Link>
         </div>

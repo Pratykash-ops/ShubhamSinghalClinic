@@ -10,17 +10,17 @@ export default function ContactPage() {
           Whether you have questions, need support, or just want to say hi — feel free to reach out. I'm here to listen.
         </p>
         <div className="mt-12 flex flex-col gap-8">
-          <div className="flex items-center justify-center gap-4">
+          {/* <div className="flex items-center justify-center gap-4">
             <Mail className="w-6 h-6 text-indigo-500" />
             <span className="text-lg font-medium">hello@drshubhamsinghal.com</span>
-          </div>
+          </div> */}
           <div className="flex items-center justify-center gap-4">
             <Phone className="w-6 h-6 text-pink-500" />
-            <span className="text-lg font-medium">+91 98765 43210</span>
+            <span className="text-lg font-medium">+91 8076 449 095</span>
           </div>
           <div className="flex items-center justify-center gap-4">
             <MapPin className="w-6 h-6 text-teal-500" />
-            <span className="text-lg font-medium">New Delhi, India</span>
+            <span className="text-lg font-medium">SRG hospital, Block E2, Shastri Nagar, New Delhi, Delhi, 110052</span>
           </div>
         </div>
 
