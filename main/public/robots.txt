@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Specifically ensuring Googlebot can crawl images
+User-agent: Googlebot-Image
+Allow: /assets/
+Allow: /static/
+
+Sitemap: https://www.shubhamsinghalclinic.com/sitemap.xml

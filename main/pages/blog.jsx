@@ -20,7 +20,7 @@ export default function BlogComingSoon() {
 
       {/* Subtext */}
       <p className="text-gray-600 max-w-lg">
-        Shubham is putting thoughts to words. We're building a space filled with insight, emotion, and empathy. Mental health, healing, human stories — all coming soon.
+        Shubham is putting thoughts to words. We're building a space filled with insight, emotion, and empathy. Mental health, healing, human stories - all coming soon.
       </p>
 
       {/* Icons section */}

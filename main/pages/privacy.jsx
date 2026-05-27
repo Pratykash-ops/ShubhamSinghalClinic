@@ -13,7 +13,7 @@ export default function PrivacyPage() {
       <section className="space-y-6">
         <p>
           We believe privacy isn't a feature. It's a human right. That's why this page
-          is written in plain language — no jargon, no manipulation.
+          is written in plain language - no jargon, no manipulation.
         </p>
 
         <h2 className="text-2xl font-semibold">🌱 What We Collect</h2>
@@ -27,7 +27,7 @@ export default function PrivacyPage() {
           <li>Country-level location</li>
         </ul>
         <p>
-          That's it. No names, emails, or trackers. We don't know who you are —
+          That's it. No names, emails, or trackers. We don't know who you are -
           and that's on purpose.
         </p>
 
@@ -39,7 +39,7 @@ export default function PrivacyPage() {
 
         <h2 className="text-2xl font-semibold">🧠 Why We Do This</h2>
         <p>
-          Anonymous data helps us make our platform better — not to market to you,
+          Anonymous data helps us make our platform better - not to market to you,
           not to follow you around the web. Just to fix bugs, track performance,
           and create smoother experiences.
         </p>

@@ -7,7 +7,7 @@ export default function ContactPage() {
       <div className="max-w-3xl mx-auto text-center space-y-6">
         <h1 className="text-4xl md:text-5xl font-bold">Let's Connect</h1>
         <p className="text-lg text-gray-600">
-          Whether you have questions, need support, or just want to say hi — feel free to reach out. I'm here to listen.
+          Whether you have questions, need support, or just want to say hi - feel free to reach out. I'm here to listen.
         </p>
         <div className="mt-12 flex flex-col gap-8">
           {/* <div className="flex items-center justify-center gap-4">

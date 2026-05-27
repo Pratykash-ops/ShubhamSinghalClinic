@@ -4,24 +4,12 @@ import { useState } from "react";
 import Link from "next/link";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const myths = [
-  {
-    myth: "Therapy is only for 'crazy' or weak people.",
-    reality: "Therapy is like a gym for your mind. It's for anyone dealing with stress, burnout, relationship issues, or simply wanting to understand themselves better."
-  },
-  {
-    myth: "I can just talk to my friends or family.",
-    reality: "Friends give advice based on their own experiences. A therapist is trained to listen objectively, without judgment, and help you find your own answers."
-  },
-  {
-    myth: "Therapy means you have to take heavy psychiatric medication.",
-    reality: "As a psychologist, Dr. Shubham uses talk therapy, cognitive techniques, and empathetic listening—not medication—to help you heal."
-  }
-];
-
-function FlipCard({ item, index }) {
+function FlipCard({ index }) {
   const [isFlipped, setIsFlipped] = useState(false);
   const { t } = useLanguage();
+
+  const myth = t(`myth${index + 1}`);
+  const reality = t(`reality${index + 1}`);
 
   return (
     <motion.div
@@ -39,7 +27,7 @@ function FlipCard({ item, index }) {
         <div className="absolute inset-0 backface-hidden bg-white/40 backdrop-blur-md border border-white/60 rounded-3xl p-8 flex flex-col justify-center items-center text-center shadow-[0_8px_30px_rgb(0,0,0,0.04)] group-hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all">
           <div className="w-14 h-14 bg-red-50 text-red-500 rounded-2xl flex items-center justify-center mb-5 text-2xl font-bold shadow-sm">✕</div>
           <h3 className="text-slate-800 font-bold mb-3 tracking-wide">The Myth</h3>
-          <p className="text-slate-600 font-medium leading-relaxed">"{item.myth}"</p>
+          <p className="text-slate-600 font-medium leading-relaxed">"{myth}"</p>
           <p className="text-[10px] text-slate-400 mt-6 font-bold uppercase tracking-widest">{t("mythHover")}</p>
         </div>
 
@@ -47,7 +35,7 @@ function FlipCard({ item, index }) {
         <div className="absolute inset-0 backface-hidden rotate-y-180 bg-gradient-to-br from-green-50/90 to-emerald-50/90 backdrop-blur-md border border-green-100/50 rounded-3xl p-8 flex flex-col justify-center items-center text-center shadow-xl">
           <div className="w-14 h-14 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center mb-5 text-2xl font-bold shadow-sm">✓</div>
           <h3 className="text-green-900 font-bold mb-3 tracking-wide">The Reality</h3>
-          <p className="text-green-800 text-sm leading-relaxed font-medium">{item.reality}</p>
+          <p className="text-green-800 text-sm leading-relaxed font-medium">{reality}</p>
         </div>
       </div>
     </motion.div>
@@ -83,8 +71,8 @@ export default function MythReality() {
       </div>
 
       <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
-        {myths.map((item, i) => (
-          <FlipCard key={i} item={item} index={i} />
+        {[0, 1, 2].map((i) => (
+          <FlipCard key={i} index={i} />
         ))}
       </div>
 

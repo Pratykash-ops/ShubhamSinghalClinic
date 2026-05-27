@@ -97,7 +97,7 @@ export default function TestimonialsSection() {
     <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 italic leading-relaxed">
       {t("quote")}
     </h2>
-    <p className="mt-2 text-sm text-gray-500">— Dr. Shubham Singhal</p>
+    <p className="mt-2 text-sm text-gray-500">- Dr. Shubham Singhal</p>
   </div>
 
   {/* Masonry Grid */}

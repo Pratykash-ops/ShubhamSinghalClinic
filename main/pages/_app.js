@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import { LanguageProvider } from "@/contexts/LanguageContext";
-import QuestionLadder from "@/components/QuestionLadder";
 import WelcomeModal from "@/components/WelcomeModal";
+import { Analytics } from "@vercel/analytics/react";
 import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }) {
@@ -10,8 +10,8 @@ export default function App({ Component, pageProps }) {
       <WelcomeModal />
       <Layout>
         <Component {...pageProps} />
-        <QuestionLadder />
       </Layout>
+      <Analytics />
     </LanguageProvider>
   );
 }

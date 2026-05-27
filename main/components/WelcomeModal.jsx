@@ -34,10 +34,10 @@ export default function WelcomeModal() {
       quote: "“सुधार का मतलब यह नहीं कि चोट कभी थी ही नहीं, बल्कि इसका मतलब है कि अब वह चोट आपकी ज़िंदगी नहीं चलाती।”"
     },
     hinglish: {
-      title: "We are here for you",
-      subtitle: "Your mental peace matters. Welcome to a safe, no-judgment zone where you can heal, vibe check your thoughts, and grow.",
-      btn: "Let's Go",
-      quote: "“Healing doesn't mean the damage never existed. It means the damage no longer controls your vibe.”"
+      title: "Hum aapki help ke liye yahan hain",
+      subtitle: "Aapka mental peace sach mein matter karta hai. Ek aisi safe, no-judgment space mein aapka swagat hai jahan aap freely baat kar sakte hain, heal kar sakte hain aur better feel kar sakte hain.",
+      btn: "Website Explore Karein",
+      quote: "“Healing ka matlab ye nahi ki dard kabhi tha hi nahi. Iska matlab hai ki ab wo dard aapki life control nahi karta.”"
     }
   };
 
