@@ -38,7 +38,7 @@ export default function Home() {
           </motion.div>
 
           <motion.div
-            className="relative w-full h-72 md:h-96"
+            className="group relative w-full h-72 md:h-96 rounded-2xl overflow-hidden shadow-xl"
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -47,10 +47,17 @@ export default function Home() {
             <Image
               src="/assets/dss-group-mtp-image0.jpeg"
               alt="Dr. Shubham Singhal"
-              className="rounded-2xl shadow-xl object-cover"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
               fill
               priority
             />
+            
+            {/* Hover Subtitle */}
+            <div className="absolute bottom-0 left-0 right-0 bg-black/60 backdrop-blur-md text-white p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500 flex items-center justify-center text-center">
+              <p className="text-sm md:text-base font-medium tracking-wide">
+                Psychological sessions provided to national hockey team
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>

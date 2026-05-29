@@ -78,11 +78,11 @@ export default function TrainedFrom() {
                 className="relative flex-shrink-0 flex items-center justify-center transition-transform hover:scale-105 duration-300"
               >
                 {item.isText ? (
-                  <div className="w-48 md:w-64 text-center whitespace-normal text-xl md:text-2xl font-extrabold text-blue-900 tracking-wider flex items-center justify-center px-4 leading-tight">
+                  <div className="w-56 md:w-80 text-center whitespace-normal text-2xl md:text-3xl font-extrabold text-blue-900 tracking-wider flex items-center justify-center px-4 leading-tight">
                     {item.text}
                   </div>
                 ) : (
-                  <div className="h-16 w-32 md:h-20 md:w-40 relative transition-all duration-300">
+                  <div className="h-20 w-40 md:h-28 md:w-52 relative transition-all duration-300">
                     <Image 
                       src={item.src} 
                       alt={item.alt} 
