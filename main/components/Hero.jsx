@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useLanguage } from "@/contexts/LanguageContext";
+import Image from "next/image";
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -94,16 +95,17 @@ export default function Hero() {
 
       {/* Right Image Section */}
       <motion.div
-        className="w-56 h-56 md:w-72 md:h-72 bg-accent rounded-full shadow-xl flex items-center justify-center overflow-hidden"
+        className="relative w-56 h-56 md:w-72 md:h-72 bg-accent rounded-full shadow-xl flex items-center justify-center overflow-hidden"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.3 }}
       >
-        {/* Placeholder for photo */}
-        <img
+        <Image
           src="/assets/dr-shubham-inv1.jpg"
           alt="Dr. Shubham Singhal"
-          className="w-full h-full object-cover"
+          className="object-cover"
+          fill
+          priority
         />
       </motion.div>
     </section>

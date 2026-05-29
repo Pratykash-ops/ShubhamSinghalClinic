@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import reviewsData from "@/data/reviews.json";
 import { useLanguage } from "@/contexts/LanguageContext";
+import Image from "next/image";
 
 function TestimonialCard({ t, index }) {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -114,11 +115,14 @@ export default function TestimonialsSection() {
       "/static/session7.jpeg",
       "/static/session8.jpeg",
     ].map((src, idx) => (
-      <img
+      <Image
         key={idx}
         src={src}
         alt={`Workshop ${idx + 1}`}
-        className="w-full my1 break-inside-avoid"
+        width={800}
+        height={600}
+        style={{ width: '100%', height: 'auto' }}
+        className="my-4 break-inside-avoid rounded-xl shadow-md"
       />
     ))}
   </div>

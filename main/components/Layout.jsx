@@ -3,27 +3,55 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Head from "next/head";
 
+export default function SEO() {
+  const pageTitle = "Best Clinical Psychologist of Delhi | Dr. Shubham Therapy & Counseling";
+  const description = "Dr. Shubham is among Top Best Clinical Psychologist of Delhi. Call now for the expert treatment of Depression, Anxiety, OCD, Autism, ADHD, and other behavioral disturbances. Confidential online & in-clinic sessions.";
+  const siteUrl = "https://www.drshubhampsychologist.in/";
+  const ogImageUrl = "https://www.drshubhampsychologist.in/assets/psychology-og.jpg";
+
+  return (
+    <Head>
+      {/* --- Core SEO Tags --- */}
+      <title>{pageTitle}</title>
+      <meta name="description" content={description} />
+      <meta name="keywords" content="best psychologist in delhi, top clinical psychologist of delhi, depression treatment delhi, anxiety therapist delhi, OCD specialist delhi, autism doctor delhi, ADHD counseling delhi, behavioral disturbances therapy, sports psychologist india" />
+      <meta name="robots" content="index, follow" />
+      <meta name="author" content="Dr. Shubham" />
+      <link rel="canonical" href={siteUrl} />
+
+      {/* --- Open Graph Protocol (LinkedIn & Facebook) --- */}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={siteUrl} />
+      <meta property="og:title" content={pageTitle} />
+      <meta property="og:description" content={description} />
+      <meta property="og:image" content={ogImageUrl} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:site_name" content="Dr. Shubham Psychological Services" />
+      <meta property="og:locale" content="en_IN" />
+
+      {/* --- X / Twitter Metadata --- */}
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content={siteUrl} />
+      <meta property="twitter:title" content={pageTitle} />
+      <meta property="twitter:description" content={description} />
+      <meta property="twitter:image" content={ogImageUrl} />
+
+      {/* --- Local SEO / Geo-Targeting --- */}
+      <meta name="geo.region" content="IN-DL" />
+      <meta name="geo.placename" content="New Delhi, Delhi" />
+      <meta name="geo.position" content="28.6139;77.2090" />
+      <meta name="ICBM" content="28.6139, 77.2090" />
+    </Head>
+  );
+}
+
 export default function Layout({
   children,
-  title = "Dr. Shubham Singhal | Psychologist",
 }) {
   return (
     <>
-      <Head>
-        <title>{title}</title>
-        <meta
-          name="description"
-          content="Online therapy, workshops, and corporate consulting with Dr. Shubham Singhal."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="keywords"
-          content="Therapist, Contact, Therapy, Shubham Singhal, Online therapy, Mental health support, mental support, psychologist"
-        />
-        <meta name="author" content="Dr. Shubham Singhal" />
-        <meta name="robots" content="index, follow" />
-      </Head>
+      <SEO/>
 
       <div className="flex flex-col min-h-screen font-sans scroll-smooth">
         <Navbar />
