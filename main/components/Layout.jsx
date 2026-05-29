@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Head from "next/head";
 
-export default function SEO() {
+export function SEO() {
   const pageTitle = "Best Clinical Psychologist of Delhi | Dr. Shubham Therapy & Counseling";
   const description = "Dr. Shubham is among Top Best Clinical Psychologist of Delhi. Call now for the expert treatment of Depression, Anxiety, OCD, Autism, ADHD, and other behavioral disturbances. Confidential online & in-clinic sessions.";
   const siteUrl = "https://www.drshubhampsychologist.in/";
